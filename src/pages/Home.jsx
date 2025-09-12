@@ -10,6 +10,7 @@ import Detils from "../components/Detils.jsx";
 import FAQ from "../components/Faq.jsx";
 import ImageGallery from "../components/ImageGallery.jsx";
 import CurvedLoop from '../transition/CurvedLoop.jsx';
+import Sponsors from "../components/Sponsors.jsx";
 
 const techLogos = [
   { node: <SiReact />, title: "React" },
@@ -39,6 +40,7 @@ export default function Home() {
             </div>
             <DevFestStats />
             <TechTracks />
+            <Sponsors />
             <Detils />
             <CurvedLoop className="sujoy mt-6"
               marqueeText="DEVFEST DURGAPUR 2025 ✦ "

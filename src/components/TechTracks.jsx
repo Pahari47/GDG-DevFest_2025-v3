@@ -99,7 +99,7 @@ export default function TechTracks() {
               </div>
 
               {/* Title */}
-              <div className="text-lg font-semibold text-center text-white">
+              <div className="text-lg font-semibold text-center text-white sujoy">
                 {track.name}
               </div>
             </div>

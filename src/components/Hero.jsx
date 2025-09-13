@@ -13,7 +13,7 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
-      className="relative min-h-full md:min-h-screen w-full flex flex-col justify-between px-4 sm:px-6 md:px-12 py-10 overflow-hidden"
+      className="relative min-h-full md:min-h-screen top-12 lg:top-0 w-full flex flex-col justify-between px-4 sm:px-6 md:px-12 py-10 overflow-hidden"
     >
       {/* Dark overlay to reduce image opacity */}
       <div className="absolute inset-0 bg-black/60 z-0"></div>
@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="w-full h-20">
           <CurvedLoop
             marqueeText="✦ DEVFEST ✦ DURGAPUR ✦ 2025 ✦ GDG ✦ DURGAPUR ✦"
-            speed={3}
+            speed={1.5}
             curveAmount={0}
             direction="right"
             interactive={true}
@@ -58,10 +58,7 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <p className="max-w-xl italic text-shadow-amber-300 sm:max-w-2xl text-center text-md md:text-base leading-relaxed sujoy">
-          Ignite Your Development Journey by Google Developer Group. Join a
-          global community of developers for a day of inspiration, learning, and
-          connection. Dive deep into the latest technologies, experiment with
-          cutting-edge tools, and network with like-minded peers.
+          Fire Up 🔥 your Dev journey with Google Developer Group. Connect with a global community, explore the latest tech, try hands - on tools, and get inspired by fellow developers — all in one power-packed day.
         </p>
       </motion.div>
     </section>

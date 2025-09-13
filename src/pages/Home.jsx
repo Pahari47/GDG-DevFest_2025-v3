@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
-import Default from "../components/defult.jsx"
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import LogoLoop from "../transition/LogoLoop.jsx"
 import { SiAngular, SiTensorflow, SiGooglecloud, SiGooglegemini, SiFlutter, SiAndroid   } from "react-icons/si";
 import Hero from "../components/Hero.jsx"
@@ -10,8 +10,6 @@ import Detils from "../components/Detils.jsx";
 import FAQ from "../components/Faq.jsx";
 import ImageGallery from "../components/ImageGallery.jsx";
 import CurvedLoop from '../transition/CurvedLoop.jsx';
-import Sponsors from "../components/Sponsors.jsx";
-import { color } from "framer-motion";
 
 const techLogos = [
   { node: <SiAngular className="text-red-600" />, title: "Angular" },
@@ -24,11 +22,28 @@ const techLogos = [
 
 
 export default function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const section = document.querySelector(location.hash);
+      if (section) {
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 300); // delay ensures DOM is ready
+      }
+    }
+  }, [location]);
+
     return (
         <>  
-            <Hero />
+            <section id="hero">
+              <Hero />
+            </section>
             <div className="w-full md:max-w-7xl mx-auto">
-            <About />
+            <section id="about">
+              <About />
+            </section>
             <div style={{ height: '60px', position: 'relative', overflow: 'hidden'}}>
                   <LogoLoop
                     logos={techLogos}
@@ -43,8 +58,12 @@ export default function Home() {
                   />
             </div>
             <DevFestStats />
-            <TechTracks />
-            {/* <Sponsors /> */}
+            <section id="tracks">
+              <TechTracks />
+            </section>
+             <section id="sponsors">
+              {/* <Sponsors /> */}
+            </section>
             <Detils />
             <CurvedLoop className="sujoy mt-28"
               marqueeText="DEVFEST DURGAPUR 2025 ✦ "

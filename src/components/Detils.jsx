@@ -77,7 +77,7 @@ const Detils = () => {
     <section className="py-8 mb-8">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center md:mb-12 sujoy">
-          Why Attend <span className="text-yellow-400">DevFest 2025</span>?
+          Why Attend <span className="text-yellow-400">DevFest 2025</span> ?
         </h2>
 
         <ScrollStack>
@@ -104,7 +104,7 @@ const Detils = () => {
               </div>
               <div className="md:w-2/3 md:pl-8">
                 <h3 className="text-2xl font-bold sujoy mb-4">Networking Opportunities</h3>
-                <p className="text-lg">
+                <p className="text-md md:text-lg">
                   Connect with like-minded developers, industry leaders, and Google experts to expand your professional network and collaborate on projects.
                 </p>
               </div>
@@ -134,7 +134,7 @@ const Detils = () => {
               </div>
               <div className="md:w-2/3 md:pl-8">
                 <h3 className="text-2xl font-bold sujoy mb-4">Career Guidance</h3>
-                <p className="text-lg">
+                <p className="text-md md:text-lg">
                   Get advice from industry professionals and Google experts on how to advance your career in tech, including resume reviews, interview tips, and career paths.
                 </p>
               </div>
@@ -164,7 +164,7 @@ const Detils = () => {
               </div>
               <div className="md:w-2/3 md:pl-8">
                 <h3 className="text-2xl font-bold sujoy mb-4">Community Engagement</h3>
-                <p className="text-lg">
+                <p className="text-md md:text-lg">
                   Engage with the vibrant Google Developer Groups community, participate in interactive sessions, and explore ways to contribute to open-source projects.
                 </p>
               </div>

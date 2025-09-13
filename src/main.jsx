@@ -4,6 +4,8 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout1 from './layout/Layout1.jsx'
 import Home from './pages/Home.jsx'
+import TeamSection from './pages/Team.jsx'
+import Speakers from './pages/speakers.jsx'
 // Sujoy Garai
 
 const router = createBrowserRouter([
@@ -12,6 +14,8 @@ const router = createBrowserRouter([
     element: <Layout1 />,
     children: [
       { index: true, element: <Home /> },
+      { path: "team", element: <TeamSection /> },
+      { path: "speakers", element: <Speakers /> },
     ],
   },
 ])

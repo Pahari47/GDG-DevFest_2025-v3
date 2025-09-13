@@ -6,6 +6,7 @@ import Layout1 from './layout/Layout1.jsx'
 import Home from './pages/Home.jsx'
 import TeamSection from './pages/Team.jsx'
 import Speakers from './pages/speakers.jsx'
+import TicketPricing from './pages/TicketPricing.jsx' 
 // Sujoy Garai
 
 const router = createBrowserRouter([
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "team", element: <TeamSection /> },
       { path: "speakers", element: <Speakers /> },
+      { path: "TicketPricing", element: <TicketPricing /> }, 
     ],
   },
 ])

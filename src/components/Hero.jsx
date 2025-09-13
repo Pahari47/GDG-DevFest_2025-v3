@@ -3,7 +3,7 @@ import React from "react";
 import CurvedLoop from "../transition/CurvedLoop";
 import { motion } from "framer-motion";
 import bgImg from "../assets/images/DSC00207.jpg";
-
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section
@@ -41,9 +41,9 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-4 mt-0 md:mt-0">
-          <button className="relative cursor-pointer sujoy text-sm sm:text-base px-6 py-3 bg-yellow-400 font-bold text-black border-4 border-yellow-800 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-transform">
-            Register now
-          </button>
+        <button className="relative cursor-pointer sujoy text-sm sm:text-base px-6 py-3 bg-yellow-400 font-bold text-black border-4 border-yellow-800 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-transform">
+  <Link to="/TicketPricing">Register now</Link>
+</button>
           <button className="relative cursor-pointer sujoy text-sm sm:text-base px-6 py-3 bg-emerald-800 font-bold text-black border-4 border-emerald-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-transform">
             Join us
           </button>

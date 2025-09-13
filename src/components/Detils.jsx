@@ -103,9 +103,9 @@ const Detils = () => {
                 </div>
               </div>
               <div className="md:w-2/3 md:pl-8">
-                <h3 className="text-2xl font-bold sujoy mb-4">Networking Opportunities</h3>
+                <h3 className="text-2xl font-bold sujoy mb-4">Cutting-edge Content</h3>
                 <p className="text-md md:text-lg">
-                  Connect with like-minded developers, industry leaders, and Google experts to expand your professional network and collaborate on projects.
+                  Learn how to build safe, secure, and scalable solutions with the latest Google technologies. Get insights directly from Googlers, Google Developer Experts (GDEs), and fellow community members.
                 </p>
               </div>
             </div>
@@ -133,9 +133,9 @@ const Detils = () => {
                 </div>
               </div>
               <div className="md:w-2/3 md:pl-8">
-                <h3 className="text-2xl font-bold sujoy mb-4">Career Guidance</h3>
+                <h3 className="text-2xl font-bold sujoy mb-4">Community Connections</h3>
                 <p className="text-md md:text-lg">
-                  Get advice from industry professionals and Google experts on how to advance your career in tech, including resume reviews, interview tips, and career paths.
+                 Connect with local developers in your area. Join engaging panel discussions, Q&A sessions, and meetups to share ideas and discover real-world projects that are shaping the future of technology.
                 </p>
               </div>
             </div>
@@ -163,9 +163,9 @@ const Detils = () => {
                 </div>
               </div>
               <div className="md:w-2/3 md:pl-8">
-                <h3 className="text-2xl font-bold sujoy mb-4">Community Engagement</h3>
+                <h3 className="text-2xl font-bold sujoy mb-4">Hands-on Learning</h3>
                 <p className="text-md md:text-lg">
-                  Engage with the vibrant Google Developer Groups community, participate in interactive sessions, and explore ways to contribute to open-source projects.
+                  Get hands-on experience through full-day workshops, codelabs, and debugging sessions. DevFest offers practical learning for all skill levels.
                 </p>
               </div>
             </div>

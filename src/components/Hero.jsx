@@ -58,7 +58,7 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <p className="max-w-xl italic text-shadow-amber-300 sm:max-w-2xl text-center text-md md:text-base leading-relaxed sujoy">
-          Fire Up 🔥 your Dev journey with Google Developer Group. Connect with a global community, explore the latest tech, try hands - on tools, and get inspired by fellow developers — all in one power-packed day.
+          Fire Up your Dev journey with Google Developer Group. Connect with a global community, explore the latest tech, try hands - on tools, and get inspired by fellow developers — all in one power-packed day.
         </p>
       </motion.div>
     </section>

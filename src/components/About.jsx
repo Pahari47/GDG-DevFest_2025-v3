@@ -2,10 +2,10 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import aboutImg from "../assets/images/aboutimg.jpg";
 import icon1 from "../assets/icons/Asset 2propHS.png"
 import icon2 from "../assets/icons/Asset 13-rxbb.png"
 import bgimg from "../assets/images/abou.png"
+import img1 from '../assets/images/AK_08863.JPG';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -79,17 +79,14 @@ export default function AboutSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
         {/* Left Text */}
         <div ref={paraRef}>
-          <p className="text-base md:text-md leading-relaxed sujoy">
-            DevFest is a celebration of technology, innovation, and community.  
-            Join us to learn, build, and grow with developers from around the world.  
-            From hands-on workshops to inspiring talks, DevFest brings together  
-            passionate people to share knowledge and create amazing experiences.
+          <p className="text-base leading-relaxed sujoy">
+            DevFest is a global series of annual technology conferences hosted by the Google Developer Groups (GDG) community, designed to provide developers with opportunities to learn about Google's developer tools, connect with peers and experts, and participate in hands-on activities like workshops and tech talks. These community-led events cover a wide range of topics, including Android development, Firebase, Flutter, Google Cloud, and Machine Learning, offering a vibrant environment for innovation and knowledge sharing.
           </p>
         </div>
 
         {/* Right Image */}
         <div className="flex justify-center" style={{
-            backgroundImage: `url(${aboutImg})`,
+            backgroundImage: `url(${img1})`,
             backgroundSize: "cover",   // makes the whole image visible
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

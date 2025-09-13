@@ -15,7 +15,7 @@ const FAQ = () => {
 
   const faqItems = [
     {
-      question: 'What is Google Developer Groups (GDG)?',
+      question: 'What are Google Developer Groups (GDG)?',
       answer: 'Google Developer Groups (GDGs) are community groups for developers who are interested in Google\'s developer technology. These groups are intended to be a space for developers to learn, connect, and grow together.'
     },
     {

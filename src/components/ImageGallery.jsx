@@ -1,7 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import img from '../assets/images/aboutimg.jpg'
+
+import img1 from '../assets/images/AK_08863.JPG';
+import img2 from '../assets/images/AK_08879.JPG';
+import img3 from '../assets/images/AK_08894.JPG';
+import img4 from '../assets/images/DSC_0332.png';
+import img5 from '../assets/images/IMG_3199.png';
+import img6 from '../assets/images/IMG_3212.png';
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -13,7 +19,7 @@ const ImageGallery = () => {
 
   // Sample images (replace with your actual image paths)
   const images = [
-    img, img, img, img, img, img, 
+    img1, img2, img3, img4, img5, img6, 
    ];
 
   useEffect(() => {
@@ -87,8 +93,7 @@ const ImageGallery = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                 <div className="sujoy">
-                  <h3 className="font-bold text-yellow-500 text-lg">DevFest 2025</h3>
-                  <p className="text-sm text-green-700">Event #{index + 1}</p>
+                  <h3 className="font-bold text-yellow-500 text-lg">DevFest Highlights</h3>
                 </div>
               </div>
             </div>

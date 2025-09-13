@@ -23,7 +23,7 @@ export default function Hero() {
 
       {/* Center Content */}
       <div className="flex flex-col items-center justify-center flex-1 z-10 text-center">
-        <h3 className="text-xl sm:text-2xl md:text-3xl text-yellow-400 font-semibold sujoy mb-8 md:mb-16">
+        <h3 className="text-xl sm:text-2xl md:text-3xl text-yellow-400 font-semibold sujoy mb-8 md:mb-16 xl:mb-22">
           2 November 2025
         </h3>
 

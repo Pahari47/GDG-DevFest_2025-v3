@@ -76,7 +76,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden sujoy absolute top-[72px] right-6 left-6 bg-black/95 border-2 border-amber-400 rounded-xl shadow-lg p-6 space-y-4">
+        <div className="lg:hidden sujoy absolute top-[72px] right-6 left-6 bg-black/95 border-2 border-amber-400 rounded-xl shadow-lg px-6 py-8 space-y-4">
           <button
             onClick={() => handleScroll("about")}
             className="block w-full text-left hover:text-blue-500"

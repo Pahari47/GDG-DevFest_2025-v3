@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import que from "../assets/images/que.png"
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -17,34 +18,34 @@ const Sponsors = () => {
       name: "Platinum Sponsors",
       level: "platinum",
       sponsors: [
-        { name: "Google", logo: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" },
-        { name: "Microsoft", logo: "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" },
+        { name: "Comming Soon", logo: que },
+        { name: "Comming Soon", logo: que },
       ]
     },
     {
       name: "Gold Sponsors",
       level: "gold",
       sponsors: [
-        { name: "Amazon", logo: "https://companieslogo.com/img/orig/AMZN_BIG.D-8fb0be81.png?t=1632523695" },
-        { name: "Meta", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/800px-Meta_Platforms_Inc._logo.svg.png" },
+        { name: "Comming Soon", logo: que },
+        { name: "Comming Soon", logo: que },
       ]
     },
     {
       name: "Silver Sponsors",
       level: "silver",
       sponsors: [
-        { name: "Twitter", logo: "https://help.twitter.com/content/dam/help-twitter/brand/logo.png" },
-        { name: "Slack", logo: "https://a.slack-edge.com/80588/marketing/img/meta/slack_hash_256.png" },
+        { name: "Comming Soon", logo: que },
+        { name: "Comming Soon", logo: que },
       ]
     },
     {
       name: "Community Partners",
       level: "community",
       sponsors: [
-        { name: "GitHub", logo: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" },
-        { name: "GitLab", logo: "https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" },
-        { name: "Notion", logo: "https://www.notion.so/cdn-cgi/image/format=auto,width=640,quality=100/front-static/shared/icons/notion-app-icon-3d.png" },
-        { name: "Figma", logo: "https://static.figma.com/app/icon/1/touch-76.png" },
+        { name: "Comming Soon", logo: que },
+        { name: "Comming Soon", logo: que },
+        { name: "Comming Soon", logo: que },
+        { name: "Comming Soon", logo: que },
       ]
     }
   ];

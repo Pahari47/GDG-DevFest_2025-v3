@@ -44,7 +44,7 @@ export default function Home() {
             </div>
             <DevFestStats />
             <TechTracks />
-            <Sponsors />
+            {/* <Sponsors /> */}
             <Detils />
             <CurvedLoop className="sujoy mt-28"
               marqueeText="DEVFEST DURGAPUR 2025 ✦ "

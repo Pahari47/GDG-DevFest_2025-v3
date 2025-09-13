@@ -46,7 +46,7 @@ const DevFestStats = () => {
       <div className="container mx-auto px-4" ref={containerRef}>
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 md:mb-26 sujoy">
           DevFest <span className='text-blue-500'>2025</span><br />
-            <span className="text-yellow-400 text-2xl">Brings you</span>
+            <span className="text-yellow-400 text-2xl">presents you</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-8">

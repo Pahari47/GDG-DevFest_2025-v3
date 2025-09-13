@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 
 export default function PixelLoader({
   gridSize = 12,
-  pixelColor = "#000000", 
+  pixelColor = "#000000",
   animationStepDuration = 1.2,
   duration = 1500,
   onFinish,
@@ -37,9 +37,7 @@ export default function PixelLoader({
     const totalPixels = pixels.length;
     const staggerDuration = animationStepDuration / totalPixels;
 
-
     const startTimer = setTimeout(() => {
-     
       gsap.to(pixels, {
         display: "block",
         duration: 0,
@@ -49,7 +47,6 @@ export default function PixelLoader({
         },
       });
 
-    
       const endTimer = setTimeout(() => {
         if (containerRef.current) {
           containerRef.current.style.display = "none";
@@ -72,7 +69,10 @@ export default function PixelLoader({
         ref={pixelGridRef}
         className="absolute inset-0 w-full h-full pointer-events-none"
       />
-      <h1 className="text-7xl font-bold sujoy text-white">Devfest 2025</h1>
+      {/* Responsive Title */}
+      <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold sujoy text-white text-center px-4">
+        Devfest 2025
+      </h1>
     </div>
   );
 }

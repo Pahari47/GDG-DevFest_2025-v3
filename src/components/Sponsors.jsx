@@ -26,7 +26,6 @@ const Sponsors = () => {
       level: "gold",
       sponsors: [
         { name: "Amazon", logo: "https://companieslogo.com/img/orig/AMZN_BIG.D-8fb0be81.png?t=1632523695" },
-        { name: "Netflix", logo: "https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" },
         { name: "Meta", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/800px-Meta_Platforms_Inc._logo.svg.png" },
       ]
     },
@@ -35,8 +34,6 @@ const Sponsors = () => {
       level: "silver",
       sponsors: [
         { name: "Twitter", logo: "https://help.twitter.com/content/dam/help-twitter/brand/logo.png" },
-        { name: "Uber", logo: "https://www.uber.com/assets/region/global/eats/expand-eats/logo-white.svg" },
-        { name: "Lyft", logo: "https://images.ctfassets.net/q8mvene1wzq4/6y0s4pm6aKAwe8qQkMqkIS/7505726c2b9c7c4c9d61e5bcec4b6c20/Lyft_Logo_White.png" },
         { name: "Slack", logo: "https://a.slack-edge.com/80588/marketing/img/meta/slack_hash_256.png" },
       ]
     },
@@ -46,7 +43,6 @@ const Sponsors = () => {
       sponsors: [
         { name: "GitHub", logo: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" },
         { name: "GitLab", logo: "https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" },
-        { name: "DigitalOcean", logo: "https://www.digitalocean.com/assets/community/community-icon-b5aff6b7.png" },
         { name: "Notion", logo: "https://www.notion.so/cdn-cgi/image/format=auto,width=640,quality=100/front-static/shared/icons/notion-app-icon-3d.png" },
         { name: "Figma", logo: "https://static.figma.com/app/icon/1/touch-76.png" },
       ]
@@ -103,7 +99,7 @@ const Sponsors = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16">
+    <section ref={sectionRef} className="py-8">
       <div className="container mx-auto px-4">
         <h2 ref={titleRef} className="text-4xl md:text-5xl font-bold text-center mb-8 sujoy">
           Our <span className="text-blue-600">Sponsors</span>
@@ -122,14 +118,14 @@ const Sponsors = () => {
               className="mb-16 last:mb-0"
             >
               <h3 className={`text-2xl font-bold text-center mb-8 sujoy ${
-                tier.level === 'platinum' ? 'text-gray-700' :
+                tier.level === 'platinum' ? 'text-gray-500' :
                 tier.level === 'gold' ? 'text-yellow-600' :
                 tier.level === 'silver' ? 'text-gray-500' : 'text-green-600'
               }`}>
                 {tier.name}
               </h3>
               
-              <div className={`grid grid-cols-1 ${
+              <div className={`grid grid-cols-2 ${
                 tier.sponsors.length === 2 ? 'md:grid-cols-2' :
                 tier.sponsors.length === 3 ? 'md:grid-cols-3' :
                 tier.sponsors.length >= 4 ? 'md:grid-cols-4' : ''

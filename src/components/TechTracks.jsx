@@ -1,6 +1,17 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import androidImg from "../assets/tracks/android.svg";
+import chromeImg from "../assets/tracks/chrome.svg";
+import firebaseImg from "../assets/tracks/firebase.svg";
+import flutterImg from "../assets/tracks/flutter.svg";
+import assistantImg from "../assets/tracks/assistant.svg";
+import mapsImg from "../assets/tracks/maps.svg";
+import tensorflowImg from "../assets/tracks/tensorflow.svg";
+import gpayImg from "../assets/tracks/gpay.svg";
+import geminiImg from "../assets/tracks/gemini.webp";
+import cloudImg from "../assets/tracks/cloud.svg";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -17,12 +28,12 @@ export default function TechTracks() {
         y: 50,
         opacity: 0,
         duration: 1,
-        ease: 'power3.out',
+        ease: "power3.out",
         scrollTrigger: {
           trigger: titleRef.current,
-          start: 'top 80%',
-          toggleActions: 'play none none none'
-        }
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
       });
 
       // Animate tracks with stagger effect
@@ -31,12 +42,12 @@ export default function TechTracks() {
         opacity: 0,
         duration: 0.8,
         stagger: 0.1,
-        ease: 'back.out(1.7)',
+        ease: "back.out(1.7)",
         scrollTrigger: {
           trigger: containerRef.current,
-          start: 'top 70%',
-          toggleActions: 'play none none none'
-        }
+          start: "top 70%",
+          toggleActions: "play none none none",
+        },
       });
     }, containerRef);
 
@@ -44,41 +55,57 @@ export default function TechTracks() {
   }, []);
 
   const tracks = [
-    { name: 'Android', icon: '🤖' },
-    { name: 'Chrome', icon: '🌐' },
-    { name: 'Firebase', icon: '🔥' },
-    { name: 'Flutter', icon: '📱' },
-    { name: 'Assistant', icon: '🎙️' },
-    { name: 'Maps', icon: '🗺️' },
-    { name: 'Tensorflow', icon: '🧠' },
-    { name: 'G-Pay', icon: '💳' },
-    { name: 'Codekit', icon: '🧰' },
-    { name: 'Cloud', icon: '☁️' }
+    { name: "Android", img: androidImg },
+    { name: "Chrome", img: chromeImg },
+    { name: "Firebase", img: firebaseImg },
+    { name: "Flutter", img: flutterImg },
+    { name: "Assistant", img: assistantImg },
+    { name: "Maps", img: mapsImg },
+    { name: "Tensorflow", img: tensorflowImg },
+    { name: "G-Pay", img: gpayImg },
+    { name: "Gemini", img: geminiImg },
+    { name: "Cloud", img: cloudImg },
   ];
 
   return (
-    <section className="py-12" ref={containerRef}>
-      <div className="container mx-auto px-4">
-        <h2 
+    <section className="py-8 relative mb-18" ref={containerRef}>
+      <div className="container mx-auto px-6">
+        {/* Title */}
+        <h2
           ref={titleRef}
-          className="text-4xl md:text-5xl font-bold text-center mb-12 sujoy"
+          className="text-4xl md:text-5xl font-extrabold text-center mb-6 text-white tracking-wide sujoy"
         >
-          Tracks
+          Tra<span className="text-green-500">cks</span>
         </h2>
-        
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
+
+        {/* Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 max-w-6xl mx-auto px-0 md:px-4">
           {tracks.map((track, index) => (
             <div
               key={index}
-              ref={el => tracksRef.current[index] = el}
-              className="flex flex-col items-center p-6 bg-zinc-800 rounded-xl shadow-lg hover:bg-zinc-950 transition-colors duration-300 transform hover:-translate-y-2 hover:shadow-xl"
+              ref={(el) => (tracksRef.current[index] = el)}
+              className="group flex flex-col items-center justify-center p-6 
+                         bg-zinc-800/60 backdrop-blur-md shadow-xl
+                         border border-zinc-700/50 hover:border-zinc-500/80
+                         hover:scale-105 transition-transform duration-300"
             >
-              <div className="text-4xl mb-4">{track.icon}</div>
-              <div className="text-lg font-medium text-center sujoy">{track.name}</div>
+              {/* Image */}
+              <div className="w-20 h-20 mb-4 flex items-center justify-center cursor-pointer">
+                <img
+                  src={track.img}
+                  alt={track.name}
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-125"
+                />
+              </div>
+
+              {/* Title */}
+              <div className="text-lg font-semibold text-center text-white">
+                {track.name}
+              </div>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
+}

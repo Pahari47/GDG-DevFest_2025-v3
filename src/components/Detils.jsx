@@ -2,6 +2,10 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import blueBg from "../assets/images/blue.png";
+import greenBg from "../assets/images/green.png";
+import yellowBg from "../assets/images/yellow.png";
+
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -54,7 +58,7 @@ const ScrollStackItem = React.forwardRef(({ children, bgImage }, ref) => {
   return (
     <div
       ref={ref}
-      className="rounded-2xl shadow-xl p-8 mx-auto max-w-4xl text-white relative overflow-hidden"
+      className="p-8 mx-auto max-w-4xl relative overflow-hidden"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
@@ -62,7 +66,7 @@ const ScrollStackItem = React.forwardRef(({ children, bgImage }, ref) => {
       }}
     >
       {/* Overlay for readability */}
-      <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative z-10">{children}</div>
     </div>
   );
@@ -70,15 +74,15 @@ const ScrollStackItem = React.forwardRef(({ children, bgImage }, ref) => {
 
 const Detils = () => {
   return (
-    <section className="py-8">
+    <section className="py-8 mb-8">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 sujoy">
-          Why Attend <span className="text-yellow-400">DevFest 2024</span>?
+        <h2 className="text-4xl md:text-5xl font-bold text-center md:mb-12 sujoy">
+          Why Attend <span className="text-yellow-400">DevFest 2025</span>?
         </h2>
 
         <ScrollStack>
           {/* 1 - Networking */}
-          <ScrollStackItem bgImage="/images/bg-network.jpg">
+          <ScrollStackItem bgImage={blueBg}>
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
                 <div className="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center">
@@ -108,7 +112,7 @@ const Detils = () => {
           </ScrollStackItem>
 
           {/* 2 - Career */}
-          <ScrollStackItem bgImage="/images/bg-career.jpg">
+          <ScrollStackItem bgImage={greenBg}>
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
                 <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center">
@@ -138,13 +142,13 @@ const Detils = () => {
           </ScrollStackItem>
 
           {/* 3 - Community */}
-          <ScrollStackItem bgImage="/images/bg-community.jpg">
+          <ScrollStackItem bgImage={yellowBg}>
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
                 <div className="w-20 h-20 rounded-full bg-purple-100 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-10 w-10 text-purple-600"
+                    className="h-10 w-10 text-yellow-600"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

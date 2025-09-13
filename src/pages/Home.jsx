@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import Default from "../components/defult.jsx"
 import LogoLoop from "../transition/LogoLoop.jsx"
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { SiAngular, SiTensorflow, SiGooglecloud, SiGooglegemini, SiFlutter, SiAndroid   } from "react-icons/si";
 import Hero from "../components/Hero.jsx"
 import About from "../components/About.jsx";
 import DevFestStats from "../components/DevFestStats.jsx"
@@ -11,19 +11,23 @@ import FAQ from "../components/Faq.jsx";
 import ImageGallery from "../components/ImageGallery.jsx";
 import CurvedLoop from '../transition/CurvedLoop.jsx';
 import Sponsors from "../components/Sponsors.jsx";
+import { color } from "framer-motion";
 
 const techLogos = [
-  { node: <SiReact />, title: "React" },
-  { node: <SiNextdotjs />, title: "Next.js" },
-  { node: <SiTypescript />, title: "TypeScript" },
-  { node: <SiTailwindcss />, title: "Tailwind CSS" },
+  { node: <SiAngular className="text-red-600" />, title: "Angular" },
+  { node: <SiTensorflow className="text-orange-500" />, title: "Tensorflow" },
+  { node: <SiGooglecloud className="text-blue-500" />, title: "Google Cloud" },
+  { node: <SiGooglegemini className="text-purple-500" />, title: "Google Gemini" },
+  { node: <SiFlutter className="text-sky-600" />, title: "Flutter" },
+  { node: <SiAndroid className="text-green-500" />, title: "Android" },
 ];
+
 
 export default function Home() {
     return (
         <>  
             <Hero />
-            <div className="max-w-7xl mx-auto">
+            <div className="w-full md:max-w-7xl mx-auto">
             <About />
             <div style={{ height: '60px', position: 'relative', overflow: 'hidden'}}>
                   <LogoLoop
@@ -42,7 +46,7 @@ export default function Home() {
             <TechTracks />
             <Sponsors />
             <Detils />
-            <CurvedLoop className="sujoy mt-6"
+            <CurvedLoop className="sujoy mt-28"
               marqueeText="DEVFEST DURGAPUR 2025 ✦ "
               speed={1}
               curveAmount={0}
@@ -50,7 +54,7 @@ export default function Home() {
             />
             <ImageGallery />
             <FAQ />
-            <div style={{ height: '60px', position: 'relative', overflow: 'hidden'}}>
+            <div style={{ height: '60px', position: 'relative', overflow: 'hidden', width: 'full'}}>
                   <LogoLoop
                     logos={techLogos}
                     speed={80}

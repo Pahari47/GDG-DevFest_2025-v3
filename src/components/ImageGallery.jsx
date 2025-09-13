@@ -73,12 +73,12 @@ const ImageGallery = () => {
     <section ref={galleryRef} className="py-2 mb-12">
       <div className="container mx-auto px-4">
         <h2 ref={titleRef} className="text-4xl md:text-5xl font-bold text-center mb-12 sujoy">
-          DevFest <span className="text-yellow-400">Gallery</span>
+          DevFest <span className="text-green-400">Gallery</span>
         </h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {images.map((image, index) => (
-            <div key={index} className="relative overflow-hidden rounded-2xl group cursor-pointer bg-amber-50">
+            <div key={index} className="relative overflow-hidden group cursor-pointer bg-amber-500">
               <img
                 ref={el => imagesRef.current[index] = el}
                 src={image}
@@ -87,8 +87,8 @@ const ImageGallery = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                 <div className="sujoy">
-                  <h3 className="font-bold text-lg">DevFest 2024</h3>
-                  <p className="text-sm">Event #{index + 1}</p>
+                  <h3 className="font-bold text-yellow-500 text-lg">DevFest 2025</h3>
+                  <p className="text-sm text-green-700">Event #{index + 1}</p>
                 </div>
               </div>
             </div>

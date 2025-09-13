@@ -3,8 +3,9 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import aboutImg from "../assets/images/aboutimg.jpg";
-import starIcon from "../assets/images/dev.jpg"; 
-import devIcon from "../assets/images/star.jpg";  
+import icon1 from "../assets/icons/Asset 2propHS.png"
+import icon2 from "../assets/icons/Asset 13-rxbb.png"
+import bgimg from "../assets/images/abou.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -62,15 +63,15 @@ export default function AboutSection() {
       {/* Top Animated Title */}
       <div
         ref={titleRef}
-        className="w-full flex flex-col items-center justify-center mb-16 space-y-6"
+        className="w-full flex flex-col items-center justify-center md:mb-16 md:space-y-6"
       >
-        <h1 className="flex items-center text-4xl md:text-5xl lg:text-7xl font-extrabold sujoy mr-80 text-yellow-500">
-          <img src={starIcon} alt="star" className="w-10 h-10 mr-8" />
+        <h1 className="flex items-center text-4xl md:text-5xl lg:text-7xl font-extrabold sujoy lg:mr-80 text-yellow-500">
+          <img src={icon1} alt="star" className="w-auto h-14 mr-8 lg:mb-10" />
           About
         </h1>
-        <h1 className="flex items-center text-4xl md:text-5xl lg:text-7xl font-extrabold sujoy ml-80">
+        <h1 className="flex items-center text-4xl md:text-5xl lg:text-7xl font-extrabold sujoy lg:ml-80">
           DEVFEST
-          <img src={devIcon} alt="dev" className="w-10 h-10 ml-8" />
+          <img src={icon2} alt="dev" className="w-auto h-14 ml-8 mb-10" />
         </h1>
       </div>
 
@@ -78,7 +79,7 @@ export default function AboutSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
         {/* Left Text */}
         <div ref={paraRef}>
-          <p className="text-lg md:text-md leading-relaxed sujoy">
+          <p className="text-base md:text-md leading-relaxed sujoy">
             DevFest is a celebration of technology, innovation, and community.  
             Join us to learn, build, and grow with developers from around the world.  
             From hands-on workshops to inspiring talks, DevFest brings together  
@@ -87,9 +88,14 @@ export default function AboutSection() {
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center" style={{
+            backgroundImage: `url(${aboutImg})`,
+            backgroundSize: "cover",   // makes the whole image visible
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+           }}>
           <img
-            src={aboutImg}
+            src={bgimg}
             alt="About Devfest"
             className="w-full h-72 object-cover"
           />

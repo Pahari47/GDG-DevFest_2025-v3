@@ -4,6 +4,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout1 from './layout/Layout1.jsx'
 import Home from './pages/Home.jsx'
+// Sujoy Garai
 
 const router = createBrowserRouter([
   {

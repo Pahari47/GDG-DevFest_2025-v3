@@ -42,14 +42,14 @@ const DevFestStats = () => {
   }, []);
 
   return (
-    <section className="py-16">
+    <section className="py-8 mt-8">
       <div className="container mx-auto px-4" ref={containerRef}>
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-26 sujoy">
-          DevFest 2025<br />
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 md:mb-26 sujoy">
+          DevFest <span className='text-blue-500'>2025</span><br />
             <span className="text-yellow-400 text-2xl">Brings you</span>
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-8">
           {/* Stat 1 */}
           <div className="text-center sujoy">
             <div 
@@ -59,7 +59,7 @@ const DevFestStats = () => {
             >
               10+
             </div>
-            <div className="text-lg uppercase tracking-wider">Speakers</div>
+            <div className="text:md md:text-lg uppercase tracking-wider">Speakers</div>
           </div>
           
           {/* Stat 2 */}
@@ -71,7 +71,7 @@ const DevFestStats = () => {
             >
               400+
             </div>
-            <div className="text-lg uppercase tracking-wider">Participants</div>
+            <div className="text:md md:text-lg uppercase tracking-wider">Participants</div>
           </div>
           
           {/* Stat 3 */}

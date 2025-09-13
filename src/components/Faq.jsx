@@ -105,18 +105,18 @@ const FAQ = () => {
   return (
     <section ref={sectionRef} className="py-8">
       <div className="container mx-auto px-4">
-        <h2 ref={titleRef} className="sujoy text-4xl md:text-5xl font-bold text-center mb-4">
-          Frequently Asked Questions
+        <h2 ref={titleRef} className="sujoy text-3xl md:text-5xl font-bold text-center mb-4">
+          Frequently <span className='text-blue-500'>Asked</span> <span className='text-green-500'>Questions</span> 
         </h2>
         
         <p className="sujoy text-lg text-center mb-12 text-yellow-500">
           Need Answers? Find them here.
         </p>
 
-        <div className="flex flex-col lg:flex-row gap-8 p-8">
+        <div className="flex flex-col lg:flex-row gap-8 md:p-8">
           {/* Questions Section - Left Side */}
           <div className="lg:w-2/5">
-            <h3 className="sujoy text-2xl font-semibold mb-6">What is DevFest?</h3>
+            <h3 className="sujoy text-2xl font-semibold mb-6"><span className='text-blue-500'>What is </span>DevFest?</h3>
             
             <div className="space-y-4">
               {faqItems.map((item, index) => (
@@ -125,7 +125,7 @@ const FAQ = () => {
                   ref={el => questionsRef.current[index] = el}
                   className={`sujoy p-4 rounded-xl cursor-pointer transition-all duration-300 ${
                     activeIndex === index 
-                      ? 'bg-blue-600 text-white shadow-lg' 
+                      ? 'bg-green-500 text-white shadow-lg' 
                       : 'bg-zinc-800 shadow-md hover:shadow-lg'
                   }`}
                   onClick={() => setActiveIndex(index)}
@@ -149,12 +149,12 @@ const FAQ = () => {
 
           {/* Answers Section - Right Side */}
           <div className="lg:w-3/5">
-            <div className="p-8 h-full">
+            <div className="md:p-8 h-full">
               <div className="flex items-center mb-6">
                 <h3 className="sujoy text-2xl font-semibold text-yellow-500">Answer</h3>
               </div>
 
-              <div ref={el => answersRef.current[activeIndex] = el} className="sujoy text-lg leading-relaxed">
+              <div ref={el => answersRef.current[activeIndex] = el} className="sujoy text-lg leading-relaxed italic">
                 {faqItems[activeIndex].answer}
               </div>
             </div>

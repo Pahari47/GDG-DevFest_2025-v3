@@ -6,14 +6,14 @@ import gdgLogo from "../assets/images/logo.jpg"; // replace with your logo
 export default function Footer() {
   return (
     <footer className="py-8 px-6 mt-8">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className="w-full md:max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         
         {/* Left Section */}
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-2xl font-bold sujoy text-yellow-500">
+          <h2 className="text-xl md:text-2xl p-2 font-bold sujoy text-yellow-500">
             Keep in touch for latest announcements!
           </h2>
-          <p className="mt-2">
+          <p className="mt-2 p-2 w-full">
             Let's get connected so that we can reach out to each other via socials. <br />
             Stack out <span className="font-medium">@GDGDurgapur</span> for updates and news.
           </p>

@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import icon1 from "../assets/icons/Asset 2propHS.png"
 import icon2 from "../assets/icons/Asset 13-rxbb.png"
 import bgimg from "../assets/images/abou.png"
-import img1 from '../assets/images/AK_08863.JPG';
+import img1 from '../assets/images/AK_09091.JPG';
 
 gsap.registerPlugin(ScrollTrigger);
 

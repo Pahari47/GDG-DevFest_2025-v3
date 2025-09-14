@@ -6,6 +6,7 @@ const plans = [
     button: "Buy Ticket",
     soldOut: false,
     accent: "red-400",
+    color: "text-green-400",
     btnColor: "bg-green-400 text-black hover:bg-green-500",
     link: "https://pages.razorpay.com/pl_RBHCb7yKq1qITX/view", 
   },
@@ -16,6 +17,7 @@ const plans = [
     button: "Buy Ticket",
     soldOut: false,
     accent: "green-400",
+    color: "text-yellow-400",
     btnColor: "bg-yellow-400 text-black hover:bg-yellow-500",
     link: "https://pages.razorpay.com/pl_RHCH0BqVix7Tnh/view",
   },
@@ -26,7 +28,8 @@ const plans = [
     button: "Buy Ticket",
     soldOut: false,
     accent: "yellow-400",
-    btnColor: "bg-blue-400 text-black hover:bg-blue-500",
+    color: "text-blue-400",
+    btnColor: "bg-gray-700 text-black hover:bg-gray-700",
     link: null, 
   },
 ];
@@ -39,12 +42,12 @@ const accentColors = {
 
 export default function TicketPricing() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black">
-      <div className="flex flex-col md:flex-row gap-6 px-4 py-12">
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="grid mt-10 lg:mt-0 grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-12">
         {plans.map((plan) => (
           <div
             key={plan.title}
-            className="relative flex flex-col items-center border-2 border-white rounded-xl bg-white/5 w-72 py-10 px-6 text-center overflow-hidden"
+            className="relative flex flex-col items-center border-2 border-white rounded-xl bg-white/5 w-auto py-16 px-10 text-center overflow-hidden"
           >
             {/* Accent block at bottom-right (z-0) */}
             <div
@@ -53,10 +56,11 @@ export default function TicketPricing() {
 
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center">
-              <h3 className="text-2xl font-bold text-white mb-2">
+              <h3 className={`text-2xl font-bold mb-2 sujoy ${plan.color}`}>
                 {plan.title}
               </h3>
-              <div className="text-3xl font-extrabold text-white mb-2">
+
+              <div className="text-3xl font-extrabold text-white mb-2 sujoy">
                 {plan.price}
               </div>
               <div className="mb-7 text-gray-200">{plan.description}</div>
@@ -73,13 +77,13 @@ export default function TicketPricing() {
                   href={plan.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`px-6 py-2 rounded shadow font-semibold border-white border inline-block ${plan.btnColor}`}
+                  className={`px-6 py-2 sujoy rounded shadow font-semibold border-white border inline-block ${plan.btnColor}`}
                 >
                   {plan.button}
                 </a>
               ) : (
                 <button
-                  className={`px-6 py-2 rounded shadow font-semibold border-white border ${plan.btnColor}`}
+                  className={`px-6 sujoy py-2 rounded shadow font-semibold border-white border ${plan.btnColor}`}
                 >
                   {plan.button}
                 </button>

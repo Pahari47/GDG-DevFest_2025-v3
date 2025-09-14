@@ -14,8 +14,8 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full fixed lg:top-6 left-0 z-50">
-      <nav className="w-full md:max-w-7xl sujoy bg-black lg:bg-black/80 mx-auto lg:rounded-2xl lg:border-2 border-b-2 border-amber-400 flex items-center justify-between px-6 py-4">
+    <header className="w-full fixed xl:top-6 left-0 z-50">
+      <nav className="w-full  xl:max-w-7xl sujoy bg-black lg:bg-black/80 mx-auto xl:rounded-2xl xl:border-2 border-b-2 border-amber-400 flex items-center justify-between px-6 py-4">
         
         {/* Logo */}
         <Link

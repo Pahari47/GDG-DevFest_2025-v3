@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import img from "../assets/images/mas.png";
 
 const teams = [
@@ -53,6 +53,15 @@ const teams = [
 ];
 
 export default function TeamSection() {
+
+  useEffect(() => {
+    // Always scroll to top when component mounts
+    window.scrollTo({
+      top: 0,
+      // behavior: 'smooth'
+    });
+  }, []);
+
   return (
     <section className="pt-28 xl:pt-34 pb-12 px-6 bg-black">
       <h2 className="arcade-font text-2xl md:text-4xl text-center mb-10 text-white">

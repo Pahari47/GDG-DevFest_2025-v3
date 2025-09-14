@@ -1,7 +1,7 @@
 const plans = [
   {
     title: "Early Bird",
-    price: "179 INR",
+    price: "209 INR",
     description: "Catch that worm!",
     button: "Buy Ticket",
     soldOut: false,
@@ -12,7 +12,7 @@ const plans = [
   },
   {
     title: "Regular",
-    price: "209 INR",
+    price: "299 INR",
     description: "Regular prices for everyone.",
     button: "Buy Ticket",
     soldOut: false,

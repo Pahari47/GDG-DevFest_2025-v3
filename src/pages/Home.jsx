@@ -10,6 +10,7 @@ import Detils from "../components/Detils.jsx";
 import FAQ from "../components/Faq.jsx";
 import ImageGallery from "../components/ImageGallery.jsx";
 import CurvedLoop from '../transition/CurvedLoop.jsx';
+import LocationSection from "../components/LocationSection.jsx";
 
 const techLogos = [
   { node: <SiAngular className="text-red-600" />, title: "Angular" },
@@ -86,6 +87,7 @@ export default function Home() {
                     ariaLabel="Technology partners"
                   />
             </div>
+            <LocationSection />
             </div>
         </>
     )

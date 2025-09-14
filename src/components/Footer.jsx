@@ -5,7 +5,7 @@ import gdgLogo from "../assets/images/logo.jpg"; // replace with your logo
 
 export default function Footer() {
   return (
-    <footer className="py-8 px-6 mt-8">
+    <footer className="py-8 px-6 mt-0">
       <div className="w-full md:max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         
         {/* Left Section */}

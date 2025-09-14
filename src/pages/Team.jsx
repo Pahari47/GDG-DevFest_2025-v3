@@ -20,7 +20,6 @@ const teams = [
       { name: "Sujoy Garai", role: "Dr B.C Roy Engineering College", img: "./sujoy.jpg" },
       { name: "Sitangshu Maji ", role: "Volunteer", img: "./sitangshu.png" },
       { name: "Priyangshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
-      { name: "mascot", role: "participants", img: img },
     ],
   },
   {
@@ -32,7 +31,6 @@ const teams = [
       { name: "Rahul Poddar", role: "Dr. B. C. Roy Engineering College", img: "./rahul.jpg" },
       { name: "Sujay Roy ", role: "Volunteer", img: "./sujoyy.jpg" },
       { name: "Kishlay Kumar ", role: "Dr B.C Roy Engineering College ", img: "./kish.jpg" },
-      { name: "mascot", role: "participants", img: img },
     ],
   },
   {
@@ -43,7 +41,6 @@ const teams = [
       { name: "Pawan Sharma", role: "Core Team Member", img: "./pawan.jpg" },
       { name: "Sourojit Banerjee ", role: "Oasis Infobyte ", img: "./surojit.jpg" },
       { name: "Sankha Chakraborty", role: "Aec", img: "./sankha.jpeg" },
-      { name: "mascot", role: "participants", img: img },
     ],
   },
   {
@@ -51,7 +48,6 @@ const teams = [
     members: [
       { name: "Riya Gupta ", role: "Gdg Durgapur ", img: "./riya.jpg" },
       { name: "Aniket Banerjee", role: "Dr B.C Roy Engineering College", img: "./aniket.jpg" },
-      { name: "mascot", role: "participants", img: img },
     ],
   },
 ];

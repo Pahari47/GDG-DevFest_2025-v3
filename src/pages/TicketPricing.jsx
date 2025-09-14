@@ -12,7 +12,7 @@ const plans = [
   },
   {
     title: "Regular",
-    price: "299 INR",
+    price: "209 INR",
     description: "Regular prices for everyone.",
     button: "Buy Ticket",
     soldOut: false,

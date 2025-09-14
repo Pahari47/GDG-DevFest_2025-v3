@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Speakers() {
     return (
-        <div className="sujoy">SUJOY GARAI</div>
+        <div className="sujoy">Coming Soon!</div>
     )
 }

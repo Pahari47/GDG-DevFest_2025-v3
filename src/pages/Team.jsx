@@ -17,7 +17,7 @@ const teams = [
       { name: "Arnab Mukherjee", role: "Aam Panna Creations", img: "./cpg.jpeg" },
       { name: "Nachiketa Pahari", role: "Recharge ", img: "./Nachiketa.jpg" },
       { name: "Soumaditya Pal", role: "LegalCare", img: "./soumyo.jpg" },
-      { name: "Sujoy Garai", role: "Dr B.C Roy Engineering College", img: "./sujoy.jpg" },
+      { name: "Sujoy Garai", role: "Dr B.C. Roy Engineering College", img: "./sujoy.jpg" },
       { name: "Sitangshu Maji ", role: "Volunteer", img: "./sitangshu.png" },
       { name: "Priyangshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
     ],
@@ -25,19 +25,20 @@ const teams = [
   {
     title: "Outreach Team",
     members: [
-      { name: "Survi Mukherjee ", role: "Dr. B.C Roy Engineering College", img: "./survii.png" },
+      { name: "Survi Mukherjee ", role: "Dr. B.C. Roy Engineering College", img: "./survii.png" },
       { name: "Anisha Kundu", role: "INFOTACT", img: "./anisha2.jpg" },
       { name: "Shruti Thakur ", role: "GDG on campus BCREC ", img: "./shruti.png" },
-      { name: "Rahul Poddar", role: "Dr. B. C. Roy Engineering College", img: "./rahul.jpg" },
+      { name: "Rahul Poddar", role: "Dr. B.C. Roy Engineering College", img: "./rahul.jpg" },
       { name: "Sujay Roy ", role: "Volunteer", img: "./sujoyy.jpg" },
       { name: "Kishlay Kumar ", role: "Dr B.C Roy Engineering College ", img: "./kish.jpg" },
+      { name: "mascot", role: "participants", img: img },
     ],
   },
   {
     title: "Graphics Team",
     members: [
       { name: "Soumyadtiya Bauri", role: "GDG ON CAMPUS BCREC ", img: "./soumyod.jpg" },
-      { name: "Amar Mahato", role: "Dr B.C Roy Engineering College", img: "./amar.jpg" },
+      { name: "Amar Mahato", role: "Dr. B.C. Roy Engineering College", img: "./amar.jpg" },
       { name: "Pawan Sharma", role: "Core Team Member", img: "./pawan.jpg" },
       { name: "Sourojit Banerjee ", role: "Oasis Infobyte ", img: "./surojit.jpg" },
       { name: "Sankha Chakraborty", role: "Aec", img: "./sankha.jpeg" },
@@ -48,6 +49,7 @@ const teams = [
     members: [
       { name: "Riya Gupta ", role: "Gdg Durgapur ", img: "./riya.jpg" },
       { name: "Aniket Banerjee", role: "Dr B.C Roy Engineering College", img: "./aniket.jpg" },
+      { name: "mascot", role: "participants", img: img },
     ],
   },
 ];

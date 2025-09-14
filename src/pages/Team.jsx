@@ -1,5 +1,5 @@
 import React from "react";
-import borderFrame from "../assets/images/abou.png";
+import img from "../assets/images/mas.png";
 
 const teams = [
   {
@@ -17,9 +17,10 @@ const teams = [
       { name: "Arnab Mukherjee", role: "Aam Panna Creations", img: "./cpg.jpeg" },
       { name: "Nachiketa Pahari", role: "Recharge ", img: "./Nachiketa.jpg" },
       { name: "Soumaditya Pal", role: "LegalCare", img: "./soumyo.jpg" },
-      { name: "Sujoy Garai", role: "Volunteer", img: "./sujoy.jpg" },
+      { name: "Sujoy Garai", role: "Dr B.C Roy Engineering College", img: "./sujoy.jpg" },
       { name: "Sitangshu Maji ", role: "Volunteer", img: "./sitangshu.png" },
       { name: "Priyangshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
+      { name: "mascot", role: "participants", img: img },
     ],
   },
   {
@@ -31,44 +32,47 @@ const teams = [
       { name: "Rahul Poddar", role: "Dr. B. C. Roy Engineering College", img: "./rahul.jpg" },
       { name: "Sujay Roy ", role: "Volunteer", img: "./sujoyy.jpg" },
       { name: "Kishlay Kumar ", role: "Dr B.C Roy Engineering College ", img: "./kish.jpg" },
+      { name: "mascot", role: "participants", img: img },
     ],
   },
   {
     title: "Graphics Team",
     members: [
       { name: "Soumyadtiya Bauri", role: "GDG ON CAMPUS BCREC ", img: "./soumyod.jpg" },
-      { name: "Amar Mahato", role: "GDG on campus BCREC", img: "./amar.jpg" },
+      { name: "Amar Mahato", role: "Dr B.C Roy Engineering College", img: "./amar.jpg" },
       { name: "Pawan Sharma", role: "Core Team Member", img: "./pawan.jpg" },
       { name: "Sourojit Banerjee ", role: "Oasis Infobyte ", img: "./surojit.jpg" },
       { name: "Sankha Chakraborty", role: "Aec", img: "./sankha.jpeg" },
+      { name: "mascot", role: "participants", img: img },
     ],
   },
   {
     title: "Management Team",
     members: [
       { name: "Riya Gupta ", role: "Gdg Durgapur ", img: "./riya.jpg" },
-      { name: "Aniket Banerjee", role: "Volunteer ", img: "./aniket.jpg" },
+      { name: "Aniket Banerjee", role: "Dr B.C Roy Engineering College", img: "./aniket.jpg" },
+      { name: "mascot", role: "participants", img: img },
     ],
   },
 ];
 
 export default function TeamSection() {
   return (
-    <section className="pt-28 pb-12 px-6 bg-black">
+    <section className="pt-28 xl:pt-34 pb-12 px-6 bg-black">
       <h2 className="arcade-font text-2xl md:text-4xl text-center mb-10 text-white">
-        🎮 Meet Our Team 🎮
+        🎮 <span className="text-blue-500">Meet</span> Our <span className="text-green-500">Team</span> 🎮
       </h2>
 
       {teams.map((team, i) => (
         <div key={i} className="mb-16">
-          <h3 className="arcade-font text-lg md:text-2xl text-center mb-8 text-gray-200">
+          <h3 className="arcade-font text-lg md:text-2xl text-center mb-8 text-yellow-200">
             {team.title}
           </h3>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
             {team.members.map((member, idx) => (
               <div key={idx} className="flex flex-col items-center text-center">
-                <div className="relative aspect-square w-[200px] overflow-hidden rounded-xl border border-gray-700">
+                <div className="relative aspect-square w-[200px] overflow-hidden rounded">
                   <div
                     className="absolute inset-0 w-full h-full"
                     style={{
@@ -78,7 +82,7 @@ export default function TeamSection() {
                     }}
                   ></div>
                 </div>
-                <p className="arcade-font text-white text-sm md:text-base mt-3">
+                <p className="arcade-font text-purple-600 text-sm md:text-base mt-3">
                   {member.name}
                 </p>
                 <p className="arcade-font text-gray-400 text-xs md:text-sm">

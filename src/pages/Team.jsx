@@ -77,11 +77,6 @@ export default function TeamSection() {
                       backgroundPosition: "center",
                     }}
                   ></div>
-                  <img
-                    src={borderFrame}
-                    alt="Frame"
-                    className="absolute inset-0 w-full h-full pointer-events-none"
-                  />
                 </div>
                 <p className="arcade-font text-white text-sm md:text-base mt-3">
                   {member.name}

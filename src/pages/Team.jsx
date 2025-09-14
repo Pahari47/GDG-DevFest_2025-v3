@@ -65,7 +65,7 @@ export default function TeamSection() {
   return (
     <section className="pt-28 xl:pt-34 pb-12 px-6 bg-black">
       <h2 className="arcade-font text-2xl md:text-4xl text-center mb-10 text-white">
-        🎮 <span className="text-blue-500">Meet</span> Our <span className="text-green-500">Team</span> 🎮
+        <span className="text-blue-500">Meet</span> Our <span className="text-green-500">Team</span>
       </h2>
 
       {teams.map((team, i) => (
@@ -87,7 +87,7 @@ export default function TeamSection() {
                     }}
                   ></div>
                 </div>
-                <p className="arcade-font text-purple-600 text-sm md:text-base mt-3">
+                <p className="arcade-font text-purple-600 text-md md:text-base mt-3">
                   {member.name}
                 </p>
                 <p className="arcade-font text-gray-400 text-xs md:text-sm">

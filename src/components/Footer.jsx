@@ -26,7 +26,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/gdg.durgapur/" className="bg-pink-500 text-white w-10 h-10 flex items-center justify-center rounded-full hover:scale-110 transition">
               <FaInstagram />
             </a>
-            <a href="#" className="bg-zinc-800 text-white w-10 h-10 flex items-center justify-center rounded-full hover:scale-110 transition">
+            <a href="https://x.com/gdgdurgapur" className="bg-zinc-800 text-white w-10 h-10 flex items-center justify-center rounded-full hover:scale-110 transition">
               <FaXTwitter />
             </a>
             <a href="https://www.linkedin.com/company/gdgdurgapur/" className="bg-blue-800 text-white w-10 h-10 flex items-center justify-center rounded-full hover:scale-110 transition">

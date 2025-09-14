@@ -1,68 +1,94 @@
-// src/components/TeamSection.jsx
 import React from "react";
-import borderFrame from "../assets/images/abou.png"; // your frame image
+import borderFrame from "../assets/images/abou.png";
 
-const teamMembers = [
+const teams = [
   {
-    name: "Sujoy Garai",
-    role: "Full Stack Developer",
-    img: "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?cs=srgb&dl=pexels-sulimansallehi-1704488.jpg&fm=jpg",
+    title: "Organizer Team",
+    members: [
+      { name: "Aninda Saha", role: "Confidential", img: "./aninda.jpg" },
+      { name: "Oishi Sen", role: "Genpact", img: "./oishi.jpg" },
+      { name: "Priyanka Singh", role: "Accenture", img: "./Priyanka.jpg" },
+    ],
   },
   {
-    name: "Ananya Roy",
-    role: "UI/UX Designer",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdaUTLa8k-uV8Wnd57YgRHt0Yx6hhlTraE3KrRTTicgj3znOQ2yAAIeTv5gQeUeLLjyjM&usqp=CAU",
+    title: "Web Team",
+    members: [
+      { name: "Avishek Mukherjee ", role: "SoulAI", img: "./abhishek.jpg" },
+      { name: "Arnab Mukherjee", role: "Aam Panna Creations", img: "./cpg.jpeg" },
+      { name: "Nachiketa Pahari", role: "Recharge ", img: "./Nachiketa.jpg" },
+      { name: "Soumaditya Pal", role: "LegalCare", img: "./soumyo.jpg" },
+      { name: "Sujoy Garai", role: "Volunteer", img: "./sujoy.jpg" },
+      { name: "Sitangshu Maji ", role: "Volunteer", img: "./sitangshu.png" },
+      { name: "Priyangshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
+    ],
   },
   {
-    name: "Ravi Kumar",
-    role: "Backend Engineer",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUZdrybHV3F79eAqX8lguAtd1W6Z037RAR7eDdxxi96nDBs490Dd5oH9EQAbC-Ubk5ad0&usqp=CAU",
+    title: "Outreach Team",
+    members: [
+      { name: "Survi Mukherjee ", role: "Dr. B.C Roy Engineering College", img: "./survii.png" },
+      { name: "Anisha Kundu", role: "INFOTACT", img: "./anisha2.jpg" },
+      { name: "Shruti Thakur ", role: "GDG on campus BCREC ", img: "./shruti.png" },
+      { name: "Rahul Poddar", role: "Dr. B. C. Roy Engineering College", img: "./rahul.jpg" },
+      { name: "Sujay Roy ", role: "Volunteer", img: "./sujoyy.jpg" },
+      { name: "Kishlay Kumar ", role: "Dr B.C Roy Engineering College ", img: "./kish.jpg" },
+    ],
   },
   {
-    name: "Priya Sharma",
-    role: "Graphic Designer",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4DQ-tp12zlDGEUfulC2NNYwJ7vvskGXip6w&s",
+    title: "Graphics Team",
+    members: [
+      { name: "Soumyadtiya Bauri", role: "GDG ON CAMPUS BCREC ", img: "./soumyod.jpg" },
+      { name: "Amar Mahato", role: "GDG on campus BCREC", img: "./amar.jpg" },
+      { name: "Pawan Sharma", role: "Core Team Member", img: "./pawan.jpg" },
+      { name: "Sourojit Banerjee ", role: "Oasis Infobyte ", img: "./surojit.jpg" },
+      { name: "Sankha Chakraborty", role: "Aec", img: "./sankha.jpeg" },
+    ],
+  },
+  {
+    title: "Management Team",
+    members: [
+      { name: "Riya Gupta ", role: "Gdg Durgapur ", img: "./riya.jpg" },
+      { name: "Aniket Banerjee", role: "Volunteer ", img: "./aniket.jpg" },
+    ],
   },
 ];
 
 export default function TeamSection() {
   return (
-    <section className="py-12 px-6">
-      <h2 className="text-3xl font-bold text-center mb-10">Meet Our Team</h2>
+    <section className="pt-28 pb-12 px-6 bg-black">
+      <h2 className="arcade-font text-2xl md:text-4xl text-center mb-10 text-white">
+        🎮 Meet Our Team 🎮
+      </h2>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-        {teamMembers.map((member, idx) => (
-          <div key={idx} className="relative w-[280px] h-[420px] mx-auto">
-            {/* Member Image as background */}
-            <div
-              className="absolute inset-0 w-full h-full"
-              style={{
-                backgroundImage: `url(${member.img})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            ></div>
+      {teams.map((team, i) => (
+        <div key={i} className="mb-16">
+          <h3 className="arcade-font text-lg md:text-2xl text-center mb-8 text-gray-200">
+            {team.title}
+          </h3>
 
-            {/* Frame overlay */}
-            <img
-              src={borderFrame}
-              alt="Frame"
-              className="absolute inset-0 w-full h-full pointer-events-none"
-            />
-
-            {/* Role (Top) */}
-            <div className="absolute top-10 left-26 -translate-x-1/2 bg-zinc-800/50 text-white w-auto px-4 py-2 rounded text-sm font-medium">
-              {member.role}
-            </div>
-
-            {/* Name (Bottom) */}
-            <div className="flex justify-center items-center w-auto">
-            <div className="absolute  bottom-12 text-center bg-zinc-800 text-white px-6 py-2 rounded sujoy text-sm font-bold">
-              {member.name}
-            </div></div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+            {team.members.map((member, idx) => (
+              <div key={idx} className="flex flex-col items-center text-center">
+                <div className="relative aspect-square w-[200px] overflow-hidden rounded-xl border border-gray-700">
+                  <div
+                    className="absolute inset-0 w-full h-full"
+                    style={{
+                      backgroundImage: `url(${member.img})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  ></div>
+                </div>
+                <p className="arcade-font text-white text-sm md:text-base mt-3">
+                  {member.name}
+                </p>
+                <p className="arcade-font text-gray-400 text-xs md:text-sm">
+                  {member.role}
+                </p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </section>
   );
 }

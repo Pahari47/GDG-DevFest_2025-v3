@@ -31,7 +31,6 @@ const teams = [
       { name: "Rahul Poddar", role: "Dr. B.C. Roy Engineering College", img: "./rahul.jpg" },
       { name: "Sujay Roy ", role: "Volunteer", img: "./sujoyy.jpg" },
       { name: "Kishlay Kumar ", role: "Dr B.C Roy Engineering College ", img: "./kish.jpg" },
-      { name: "mascot", role: "participants", img: img },
     ],
   },
   {
@@ -49,7 +48,6 @@ const teams = [
     members: [
       { name: "Riya Gupta ", role: "Gdg Durgapur ", img: "./riya.jpg" },
       { name: "Aniket Banerjee", role: "Dr B.C Roy Engineering College", img: "./aniket.jpg" },
-      { name: "mascot", role: "participants", img: img },
     ],
   },
 ];

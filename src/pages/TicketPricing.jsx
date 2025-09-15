@@ -4,7 +4,7 @@ const plans = [
     price: "209 INR",
     description: "Catch that worm!",
     button: "Buy Ticket",
-    soldOut: false,
+    soldOut: true,
     accent: "red-400",
     color: "text-green-400",
     btnColor: "bg-green-400 text-black hover:bg-green-500",

@@ -13,9 +13,9 @@ const plans = [
   {
     title: "Regular",
     price: "299 INR",
-    description: "Regular prices for everyone.",
+    description: "Next slot open soon.",
     button: "Buy Ticket",
-    soldOut: false,
+    soldOut: true,
     accent: "green-400",
     color: "text-yellow-400",
     btnColor: "bg-yellow-400 text-black hover:bg-yellow-500",

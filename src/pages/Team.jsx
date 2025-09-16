@@ -19,6 +19,7 @@ const teams = [
       { name: "Sujoy Garai", role: "Dr B.C. Roy Engineering College", img: "./sujoy.jpg" },
       { name: "Sitangshu Maji ", role: "Volunteer", img: "./sitangshu.png" },
       { name: "Priyangshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
+      { name: "Anirban Saha", role: "Bengal College of Engineering And Technology", img: "./uuuu.jpg" },
     ],
   },
   {

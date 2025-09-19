@@ -29,7 +29,7 @@ const plans = [
     soldOut: false,
     accent: "yellow-400",
     color: "text-blue-400",
-    btnColor: "bg-gray-700 text-black hover:bg-gray-700",
+    btnColor: "bg-yellow-400 text-black hover:bg-gray-700",
     link: "https://pages.razorpay.com/pl_RHCahIPp1jHJLl/view", 
   },
 ];

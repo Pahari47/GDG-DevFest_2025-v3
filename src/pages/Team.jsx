@@ -23,7 +23,7 @@ const teams = [
       { name: "Sitangshu Maji ", role: "Volunteer", img: "./sitangshu.png" },
       { name: "Priyangshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
       { name: "Anirban Saha", role: "Bengal College of Engineering And Technology", img: "./uuuu.jpg" },
-      { name: "Rony", role: "Marg Erp", img: "./Rony.jpg" },
+      { name: "Rony", role: "Marg Erp", img: "./Rony.jpg.jpg" },
     ],
   },
   {

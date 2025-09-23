@@ -13,7 +13,7 @@ const plans = [
   {
     title: "Regular",
     price: "299 INR",
-    description: "Next slot open soon.",
+    description: "Be the part growth.",
     button: "Buy Ticket",
     soldOut: true,
     accent: "green-400",
@@ -23,14 +23,14 @@ const plans = [
   },
   {
     title: "Professional",
-    price: "Coming Soon!",
+    price: "399 INR",
     description: "We've still got you covered.",
     button: "Buy Ticket",
     soldOut: false,
     accent: "yellow-400",
     color: "text-blue-400",
-    btnColor: "bg-gray-700 text-black hover:bg-gray-700",
-    link: null, 
+    btnColor: "bg-yellow-400 text-black hover:bg-yellow-500",
+    link: "https://pages.razorpay.com/pl_RHCahIPp1jHJLl/view", 
   },
 ];
 

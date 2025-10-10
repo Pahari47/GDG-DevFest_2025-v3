@@ -26,7 +26,7 @@ const plans = [
     price: "399 INR",
     description: "We've still got you covered.",
     button: "Buy Ticket",
-    soldOut: false,
+    soldOut: true,
     accent: "yellow-400",
     color: "text-blue-400",
     btnColor: "bg-yellow-400 text-black hover:bg-yellow-500",

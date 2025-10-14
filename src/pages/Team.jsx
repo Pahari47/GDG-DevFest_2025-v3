@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const teams = [
+const organizer = [
   {
     title: "Organizer Team",
     members: [
@@ -9,6 +9,9 @@ const teams = [
       { name: "Priyanka Singh", role: "Accenture", img: "./Priyanka.jpg" },
     ],
   },
+]
+
+const teams = [
   {
     title: "Web Team",
     members: [
@@ -16,10 +19,11 @@ const teams = [
       { name: "Arnab Mukherjee", role: "Aam Panna Creations", img: "./cpg.jpeg" },
       { name: "Nachiketa Pahari", role: "Recharge ", img: "./Nachiketa.jpg" },
       { name: "Soumaditya Pal", role: "LegalCare", img: "./soumyo.jpg" },
-      { name: "Sujoy Garai", role: "Dr B.C. Roy Engineering College", img: "./sujoy.jpg" },
+      { name: "Sujoy Garai", role: "Dr. B.C. Roy Engineering College", img: "./sujoy.jpg" },
       { name: "Sitangshu Maji ", role: "Volunteer", img: "./sitangshu.png" },
       { name: "Priyangshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
       { name: "Anirban Saha", role: "Bengal College of Engineering And Technology", img: "./uuuu.jpg" },
+      { name: "Mowazzem Uddin Ahmed", role: "Marg Erp", img: "./Rony.jpg.jpg" },
     ],
   },
   {
@@ -30,7 +34,7 @@ const teams = [
       { name: "Shruti Thakur ", role: "GDG on campus BCREC ", img: "./shruti.png" },
       { name: "Rahul Poddar", role: "Dr. B.C. Roy Engineering College", img: "./rahul.jpg" },
       { name: "Sujay Roy ", role: "Volunteer", img: "./sujoyy.jpg" },
-      { name: "Kishlay Kumar ", role: "Dr B.C Roy Engineering College ", img: "./kish.jpg" },
+      { name: "Kishlay Kumar ", role: "Dr. B.C Roy Engineering College ", img: "./kish.jpg" },
     ],
   },
   {
@@ -47,7 +51,7 @@ const teams = [
   {
     title: "Management Team",
     members: [
-      { name: "Aniket Banerjee", role: "Dr B.C Roy Engineering College", img: "./aniket.jpg" },
+      { name: "Aniket Banerjee", role: "Dr. B.C Roy Engineering College", img: "./aniket.jpg" },
     ],
   },
 ];
@@ -60,10 +64,43 @@ export default function TeamSection() {
   }, []);
 
   return (
-    <section className="pt-28 xl:pt-34 pb-12 px-6 bg-black">
+    <section className="w-full xl:max-w-7xl mx-auto pt-28 xl:pt-34 pb-12 px-6">
       <h2 className="arcade-font text-2xl md:text-4xl text-center mb-10 text-white">
         <span className="text-blue-500">Meet</span> Our <span className="text-green-500">Team</span>
       </h2>
+
+      {organizer.map((team, i) => (
+        <div key={i} className="mb-16">
+          <h3 className="arcade-font text-lg md:text-2xl text-center mb-8 text-yellow-200">
+            {team.title}
+          </h3>
+
+          <div className="flex justify-center">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 h-auto w-auto">
+              {team.members.map((member, idx) => (
+                <div key={idx} className="flex flex-col items-center text-center">
+                  <div className="relative aspect-square w-[200px] overflow-hidden rounded">
+                    <div
+                      className="absolute inset-0 w-full h-full"
+                      style={{
+                        backgroundImage: `url(${member.img})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }}
+                    ></div>
+                  </div>
+                  <p className="arcade-font text-purple-600 text-sm md:text-base mt-3">
+                    {member.name}
+                  </p>
+                  <p className="arcade-font text-gray-400 text-xs md:text-sm">
+                    {member.role}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
 
       {teams.map((team, i) => (
         <div key={i} className="mb-16">
@@ -72,7 +109,7 @@ export default function TeamSection() {
           </h3>
 
           <div className="flex justify-center">
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-12 h-auto w-auto">
               {team.members.map((member, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center">
                   <div className="relative aspect-square w-[200px] overflow-hidden rounded">

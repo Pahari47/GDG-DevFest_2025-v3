@@ -54,10 +54,10 @@ const DevFestStats = () => {
           <div className="text-center sujoy">
             <div 
               ref={el => statsRef.current[0] = el}
-              data-value="10+"
+              data-value="7+"
               className="text-4xl md:text-5xl font-bold text-purple-900 mb-2"
             >
-              10+
+              7+
             </div>
             <div className="text:md md:text-lg uppercase tracking-wider">Speakers</div>
           </div>
@@ -66,10 +66,10 @@ const DevFestStats = () => {
           <div className="text-center sujoy">
             <div 
               ref={el => statsRef.current[1] = el}
-              data-value="400+"
+              data-value="450+"
               className="text-4xl md:text-5xl font-bold text-yellow-400 mb-2"
             >
-              400+
+              450+
             </div>
             <div className="text:md md:text-lg uppercase tracking-wider">Participants</div>
           </div>

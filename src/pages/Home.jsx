@@ -11,6 +11,7 @@ import FAQ from "../components/Faq.jsx";
 import ImageGallery from "../components/ImageGallery.jsx";
 import CurvedLoop from '../transition/CurvedLoop.jsx';
 import LocationSection from "../components/LocationSection.jsx";
+import Sponsors from "../components/Sponsors.jsx";
 
 const techLogos = [
   { node: <SiAngular className="text-red-600" />, title: "Angular" },
@@ -63,7 +64,7 @@ export default function Home() {
               <TechTracks />
             </section>
              <section id="sponsors">
-              {/* <Sponsors /> */}
+              <Sponsors />
             </section>
             <Detils />
             <CurvedLoop className="sujoy mt-28"

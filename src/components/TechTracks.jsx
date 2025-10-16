@@ -12,6 +12,7 @@ import tensorflowImg from "../assets/tracks/tensorflow.svg";
 
 import geminiImg from "../assets/tracks/gemini.webp";
 import cloudImg from "../assets/tracks/cloud.svg";
+import adkimg from "../assets/tracks/adk.png";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -59,11 +60,10 @@ export default function TechTracks() {
     { name: "Chrome", img: chromeImg },
     { name: "Firebase", img: firebaseImg },
     { name: "Flutter", img: flutterImg },
-    { name: "Assistant", img: assistantImg },
-    { name: "Maps", img: mapsImg },
     { name: "Tensorflow", img: tensorflowImg },
     { name: "Gemini", img: geminiImg },
     { name: "Cloud", img: cloudImg },
+    { name: "Google ADK", img: adkimg },
   ];
 
   return (
@@ -78,7 +78,7 @@ export default function TechTracks() {
         </h2>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 max-w-6xl mx-auto px-0 md:px-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 max-w-6xl mx-auto px-0 md:px-4">
           {tracks.map((track, index) => (
             <div
               key={index}

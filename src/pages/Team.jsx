@@ -21,7 +21,7 @@ const teams = [
       { name: "Soumaditya Pal", role: "LegalCare", img: "./soumyo.jpg" },
       { name: "Sujoy Garai", role: "Dr. B.C. Roy Engineering College", img: "./sujoy.jpg" },
       { name: "Sitangshu Maji ", role: "Volunteer", img: "./sitangshu.png" },
-      { name: "Priyangshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
+      { name: "Priyanshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
       { name: "Anirban Saha", role: "Bengal College of Engineering And Technology", img: "./uuuu.jpg" },
       { name: "Mowazzem Uddin Ahmed", role: "Marg Erp", img: "./Rony.jpg.jpg" },
     ],

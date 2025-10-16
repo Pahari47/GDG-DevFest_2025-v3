@@ -9,7 +9,7 @@ import flutterImg from "../assets/tracks/flutter.svg";
 import assistantImg from "../assets/tracks/assistant.svg";
 import mapsImg from "../assets/tracks/maps.svg";
 import tensorflowImg from "../assets/tracks/tensorflow.svg";
-import gpayImg from "../assets/tracks/gpay.svg";
+
 import geminiImg from "../assets/tracks/gemini.webp";
 import cloudImg from "../assets/tracks/cloud.svg";
 
@@ -62,7 +62,6 @@ export default function TechTracks() {
     { name: "Assistant", img: assistantImg },
     { name: "Maps", img: mapsImg },
     { name: "Tensorflow", img: tensorflowImg },
-    { name: "G-Pay", img: gpayImg },
     { name: "Gemini", img: geminiImg },
     { name: "Cloud", img: cloudImg },
   ];

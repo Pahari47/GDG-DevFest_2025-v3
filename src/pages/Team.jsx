@@ -18,7 +18,6 @@ const teams = [
       { name: "Avishek Mukherjee ", role: "SoulAI", img: "./abhishek.jpg" },
       { name: "Arnab Mukherjee", role: "Aam Panna Creations", img: "./cpg.jpeg" },
       { name: "Nachiketa Pahari", role: "Recharge ", img: "./Nachiketa.jpg" },
-      { name: "Soumaditya Pal", role: "LegalCare", img: "./soumyo.jpg" },
       { name: "Sujoy Garai", role: "Dr. B.C. Roy Engineering College", img: "./sujoy.jpg" },
       { name: "Sitangshu Maji ", role: "Volunteer", img: "./sitangshu.png" },
       { name: "Priyanshu Singh", role: "Volunteer", img: "./priyangshu.jpg" },
@@ -31,10 +30,8 @@ const teams = [
     members: [
       { name: "Survi Mukherjee ", role: "Dr. B.C. Roy Engineering College", img: "./survii.png" },
       { name: "Anisha Kundu", role: "INFOTACT", img: "./anisha2.jpg" },
-      { name: "Shruti Thakur ", role: "GDG on campus BCREC ", img: "./shruti.png" },
       { name: "Rahul Poddar", role: "Dr. B.C. Roy Engineering College", img: "./rahul.jpg" },
       { name: "Sujay Roy ", role: "Volunteer", img: "./sujoyy.jpg" },
-      { name: "Kishlay Kumar ", role: "Dr. B.C Roy Engineering College ", img: "./kish.jpg" },
     ],
   },
   {

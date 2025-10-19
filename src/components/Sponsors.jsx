@@ -17,7 +17,7 @@ const Sponsors = () => {
   tiersRef.current = []; // ✅ reset refs to prevent stale references
 
   const sponsors = [
-    { name: "Google", logo: sponsorimg1 },
+    // { name: "Google", logo: sponsorimg1 },
     { name: "Cyber A1", logo: sponsorimg2 },
     { name: "Latrics", logo: sponsorimg3 },
     { name: "Coming Soon", logo: que },

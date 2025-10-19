@@ -8,6 +8,7 @@ import img5 from "/Asset46.png";
 import img6 from "/Asset47.png";
 import img7 from "/Asset48.png";
 import img8 from "/Asset49.png";
+import img9 from "/Asset50.png";
 
 const speakers = [
   { id: 1, name: "Jitendra Gupta", img: img1, color: "text-pink-400" },
@@ -18,6 +19,7 @@ const speakers = [
   { id: 6, name: "Debajit Mallick", img: img7, color: "text-yellow-400" },
   { id: 7, name: "Jay Thakkar", img: img4, color: "text-pink-400" },
   { id: 8, name: "Nitin Prakash", img: img6, color: "text-green-400" },
+  { id: 9, name: "Saurabh Mishra", img: img9, color: "text-blue-400" },
 ];
 
 export default function Speaker() {

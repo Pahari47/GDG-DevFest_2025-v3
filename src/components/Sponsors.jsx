@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import que from "../assets/images/que.png";
 import sponsorimg1 from "../assets/Sponsors/gdgdurgapur.jpeg";
 import sponsorimg2 from "../assets/Sponsors/CyberA1.png";
+import sponsorimg3 from "../assets/Sponsors/fulllogo.png";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -16,8 +17,9 @@ const Sponsors = () => {
   tiersRef.current = []; // ✅ reset refs to prevent stale references
 
   const sponsors = [
-    { name: "Google", logo: sponsorimg1 },
+    // { name: "Google", logo: sponsorimg1 },
     { name: "Cyber A1", logo: sponsorimg2 },
+    { name: "Latrics", logo: sponsorimg3 },
     { name: "Coming Soon", logo: que },
   ];
 
@@ -79,12 +81,26 @@ const Sponsors = () => {
 
         <p
           ref={subtitleRef}
-          className="text-lg text-center mb-18 max-w-2xl mx-auto sujoy"
+          className="text-lg text-center mb-10 max-w-2xl mx-auto sujoy"
         >
           We're grateful to our partners and sponsors who make DevFest 2025
           possible. Their support helps us create an amazing experience for all
           attendees.
         </p>
+
+        <div className="px-0 mb-12 flex justify-center items-center">
+          <div
+              className="sujoy cursor-pointer w-xl bg-white border-yellow-300 border-2 rounded shadow-md py-8 px-8 flex flex-col items-center justify-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border hover:border-red-300"
+            >
+              <img
+                src="https://res.cloudinary.com/startup-grind/image/upload/dpr_2.0,fl_sanitize/v1/gcs/platform-data-goog/contentbuilder/GDG-Lockup-1Line-Black_vMWBFT9.svg"
+                alt="gdg"
+                className="w-auto h-auto p-1 object-contain transition-transform duration-300 hover:scale-105 hover:brightness-110"
+              />
+          </div>
+        </div>
+
+        {/* <div className="p-0 h-1 bg-blue-300/30 w-2xl mb-8 mx-auto rounded-3xl"></div> */}
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
           {sponsors.map((sponsor, index) => (

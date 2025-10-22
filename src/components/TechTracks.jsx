@@ -83,9 +83,9 @@ export default function TechTracks() {
             <div
               key={index}
               ref={(el) => (tracksRef.current[index] = el)}
-              className="group flex flex-col items-center justify-center p-6 
-                         bg-zinc-800/60 backdrop-blur-md shadow-xl
-                         border border-zinc-700/50 hover:border-zinc-500/80
+              className="group flex flex-col items-center justify-center p-6 rounded
+                         bg-yellow-100/10 backdrop-blur-md shadow-xl
+                         border border-blue-100/70 hover:border-zinc-500/80
                          hover:scale-105 transition-transform duration-300"
             >
               {/* Image */}

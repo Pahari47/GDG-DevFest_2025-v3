@@ -20,7 +20,6 @@ const Sponsors = () => {
     // { name: "Google", logo: sponsorimg1 },
     { name: "Cyber A1", logo: sponsorimg2 },
     { name: "Latrics", logo: sponsorimg3 },
-    { name: "Coming Soon", logo: que },
   ];
 
   useEffect(() => {
@@ -102,7 +101,7 @@ const Sponsors = () => {
 
         {/* <div className="p-0 h-1 bg-blue-300/30 w-2xl mb-8 mx-auto rounded-3xl"></div> */}
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 place-items-center">
           {sponsors.map((sponsor, index) => (
             <div
               key={index}

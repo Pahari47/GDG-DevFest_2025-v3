@@ -12,6 +12,7 @@ import ImageGallery from "../components/ImageGallery.jsx";
 import CurvedLoop from '../transition/CurvedLoop.jsx';
 import LocationSection from "../components/LocationSection.jsx";
 import Sponsors from "../components/Sponsors.jsx";
+import EventPopup from "../components/EventPopup.jsx";
 
 const techLogos = [
   { node: <SiAngular className="text-red-600" />, title: "Angular" },
@@ -39,6 +40,7 @@ export default function Home() {
 
     return (
         <>  
+          <EventPopup />
             <section id="hero">
               <Hero />
             </section>

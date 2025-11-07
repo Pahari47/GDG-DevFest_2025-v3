@@ -40,7 +40,7 @@ export default function Home() {
 
     return (
         <>  
-          <EventPopup />
+          {/* <EventPopup /> */}
             <section id="hero">
               <Hero />
             </section>

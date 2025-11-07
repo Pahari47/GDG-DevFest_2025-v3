@@ -54,6 +54,11 @@ export default function Header() {
             </button>
           </li>
           <li>
+            <Link to="/ctfwinner" className="hover:text-pink-500 cursor-pointer">
+              CtfWinner
+            </Link>
+          </li>
+          <li>
             <Link to="/speakers" className="hover:text-red-500 cursor-pointer">
               Speakers
             </Link>

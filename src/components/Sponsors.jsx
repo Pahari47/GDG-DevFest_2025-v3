@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import que from "../assets/images/que.png";
-import sponsorimg1 from "../assets/Sponsors/gdgdurgapur.jpeg";
 import sponsorimg2 from "../assets/Sponsors/CyberA1.png";
 import sponsorimg3 from "../assets/Sponsors/fulllogo.png";
+import sponsorimg4 from "../assets/Sponsors/dsms.png";
+import sponsorimg5 from "../assets/Sponsors/OffSec.png";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -17,9 +18,10 @@ const Sponsors = () => {
   tiersRef.current = []; // ✅ reset refs to prevent stale references
 
   const sponsors = [
-    // { name: "Google", logo: sponsorimg1 },
     { name: "Cyber A1", logo: sponsorimg2 },
     { name: "Latrics", logo: sponsorimg3 },
+    { name: "DSMS", logo: sponsorimg4 },
+    { name: "OFFSEC", logo: sponsorimg5 },
   ];
 
   useEffect(() => {
